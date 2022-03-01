@@ -1,0 +1,27 @@
+app-nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  z-index: 100;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    section{
+        display: flex;
+        justify-content: space-between;
+        background-color: #565896 ;
+        padding: 5px 0;
+    }
+    app-nav{
+        position: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        z-index: unset;
+    }
+
+}

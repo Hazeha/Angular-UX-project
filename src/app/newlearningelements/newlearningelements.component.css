@@ -1,0 +1,42 @@
+
+h1{
+    text-align: center;
+    color: white;
+}
+#info-tab{
+    height: 300px;
+}
+button{
+  color: white;
+  display: flex;
+  justify-content: center;
+  border: solid white 1px;
+  padding: .3rem 1.8rem;
+  margin: auto;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0 ,0, 0.2);
+  box-shadow: 0px 0px 10px rgba(66,66,66,.45);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 1rem 0;
+  color: white;
+}
+header h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.currentSetting{
+  font-size: 14pt;
+}
+
+mat-card{
+  width: 100%;
+}

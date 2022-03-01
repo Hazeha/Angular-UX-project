@@ -1,0 +1,87 @@
+/* Everywhere */
+h1, h2, h3{
+    color: white;
+}
+
+.guide{
+    color: white;
+    opacity: 70%;
+    font-size: 1.7rem;
+    position: absolute;
+    right: 5px;
+    top: 60px;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0px;
+
+    padding: 1rem 0 0;
+    color: white;
+
+}
+header h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.currentSetting{
+  font-size: 15pt;
+}
+/* Cards navigation box */
+mat-card{
+    width: 45%;
+    max-width: 300px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    background-color: rgba(86, 88, 150, 0.51);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+mat-card.button{
+    cursor: pointer;
+}
+mat-card.button:hover{
+    background-color: rgba(86, 88, 150, 0.70);
+}
+
+.icon{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(18,181,72);
+    background: radial-gradient(circle, rgba(18,181,72,1) 0%, rgba(53,199,102,1) 52%, rgba(138,255,177,1) 100%);
+}
+
+/* App-component */
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.popUpBtn{
+  float: right;
+}
+
+@media screen and (min-width: 800px) {
+    /* Everywhere */
+    .guide{
+        top: 100px;
+    }
+
+}

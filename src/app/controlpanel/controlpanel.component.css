@@ -1,0 +1,32 @@
+.divider{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 15%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.divider hr{
+    width: 100%;
+    color: white;
+}
+.divider span{
+    color: white;
+    opacity: 70%;
+    margin: 0 10px;
+    font-size: 1.3rem;
+}
+
+.zoneContainer{
+padding: 15px;
+}
+
+
+mat-card{
+    margin: auto;
+}
+
+.second-element{
+    margin-bottom: 100px;
+}

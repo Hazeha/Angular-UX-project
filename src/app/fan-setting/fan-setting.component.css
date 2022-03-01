@@ -1,0 +1,16 @@
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+header h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.fan-nav{
+  display: flex;
+  justify-content: center;
+}

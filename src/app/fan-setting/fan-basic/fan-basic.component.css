@@ -1,0 +1,65 @@
+.subhead{
+    margin: 0 0;
+    padding-top: 5px;
+}
+.subhead h2{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: unset;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container mat-card{
+    margin: 5px;
+    padding: 10px;
+}
+
+mat-card p{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+fa-icon.icon{
+    margin-bottom: 5px;
+}
+.icon.cold{
+    background: rgb(23,18,181);
+    background: radial-gradient(circle, rgba(23,18,181,1) 0%, rgba(53,120,199,1) 52%, rgba(138,209,255,1) 100%);
+}
+
+.icon.good{
+    background: rgb(18,181,72);
+    background: radial-gradient(circle, rgba(18,181,72,1) 0%, rgba(53,199,102,1) 52%, rgba(138,255,177,1) 100%);
+}
+
+.icon.warm{
+    background: rgb(181,75,18);
+    background: radial-gradient(circle, rgba(181,75,18,1) 0%, rgba(199,65,53,1) 52%, rgba(255,185,138,1) 100%);
+}
+
+.Cold{
+    color: rgb(23,18,181);
+    font-weight: bold;
+}
+.Good{
+    color: rgb(18,181,72);
+    font-weight: bold;
+}
+.Warm{
+    color: rgb(181,75,18);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 800px){
+    .container{
+        flex-direction: unset;
+        justify-content: center;
+    }
+    .container mat-card{
+        max-width: 200px;
+    }
+}

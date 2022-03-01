@@ -1,0 +1,22 @@
+ mat-toolbar{
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+     background-color: #565896;
+     border-top-left-radius: 50%;
+     border-top-right-radius: 50%;
+     padding-top: 20px;
+     height: fit-content;
+}
+
+@media screen and (min-width: 800px) {
+    mat-toolbar button{
+        margin: 0 10px;
+
+    }
+    mat-toolbar{
+        -webkit-box-shadow: unset;
+        box-shadow: unset;
+    }
+}
+
+

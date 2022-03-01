@@ -1,0 +1,28 @@
+mat-toolbar{
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+
+    background-color: #565896;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.v2u{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+.v2u span{
+    color: #6ea81a;
+}
+
+@media screen and (min-width: 800px) {
+    mat-toolbar{
+        -webkit-box-shadow: unset;
+        box-shadow: unset;
+        border-radius: unset;
+    }
+}

@@ -1,0 +1,23 @@
+<header>
+  <h1>Fan Setting</h1>
+   <p class="currentSetting">Current Airflow : {{ currentAir || 0 }}</p>
+   <p class="currentSetting">Selected Zone : {{ selectedZone}}</p>
+</header>
+<fa-icon [icon]="question" class="guide" (click)="tourStart()"></fa-icon>
+<header class="subhead">
+  <h2>How do you feel?</h2>
+</header>
+<section class="container">
+    <mat-card class="card first-element button" (click)="coldClicked('coldSetting')">
+      <fa-icon [icon]="cold" class="icon cold"></fa-icon>
+      <p>Cold</p>
+    </mat-card>
+    <mat-card class="card second-element button" (click)="coldClicked('goodSetting')">
+      <fa-icon [icon]="good" class="icon good"></fa-icon>
+      <p>Good</p>
+    </mat-card>
+    <mat-card class="card third-element button" (click)="coldClicked('warmSetting')">
+      <fa-icon [icon]="warm" class="icon warm"></fa-icon>
+      <p>Warm</p>
+    </mat-card>
+</section>

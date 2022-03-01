@@ -1,0 +1,70 @@
+.selectZone{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.zone{
+  width: 45%;
+  border: 1px solid rgba(0, 0 ,0, 0.2);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  background-color: rgba(86, 88, 150, 0.51);
+  color: white;
+
+}
+
+.zone{
+  padding: 10px;
+  max-width: 45%;
+  display: grid;
+  grid-template-areas:
+            "hl hl hl"
+            ". . ."
+            ". . .";
+
+  column-gap: 5px;
+  align-content: center;
+}
+.zoneInfo{
+  grid-area: hl;
+}
+.dropDowns{
+  width: 100%;
+  background-color: rgba(0, 0 ,0, 0.2);
+  color: white;
+  border-bottom: 2px solid rgba(255,255,255, 0.5);
+
+  box-shadow: 0px 0px 10px rgba(66,66,66,.45);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+  text-align: center;
+}
+.dropDowns:focus {
+  border-bottom: 3px solid rgba(255,255,255, 1);
+}
+mat-label{
+  color: white;
+  font-size: 16pt;
+
+}
+.selectValue{
+  font-size: 15pt;
+  color: white;
+}
+.ng-star-inserted{
+  font-size: 31px;
+}
+
+.select{
+  background-color: rgba(86, 88, 150, 0.51);
+  color: white;
+}
+.popUpBtn{
+  float: right;
+}
+.info-box{
+  width: 100%;
+}
+.zoneSelected{
+  border: green
+}

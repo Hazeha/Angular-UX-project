@@ -1,0 +1,37 @@
+<header>
+    <h1>Profile</h1>
+</header>
+
+<section class="container">
+
+  <h2>Username</h2>
+  <h3>{{userData.username}}</h3>
+  <h2>Email</h2>
+  <h3>{{userData.email}}</h3>
+  <h2>Password</h2>
+  <h3>*************</h3>
+  <h2>Presets</h2>
+  <h3>Airflow: {{this.userData.airflow || 0 }}</h3>
+  <h3>Zone: {{this.userData.zone_id || 0}}</h3>
+  <span class="buttonGeneral" (click)="logout()">LogOut</span>
+  <span class="buttonGeneral" style="color: #f44336; border: 1px solid #f44336; margin-top: 20px">Delete Account</span>
+</section>
+
+
+<!--<div class="container">-->
+
+<!--<div mat-card-avatar class="example-header-image">-->
+<!--<img [src]='photoUrl'>-->
+<!--</div>-->
+<!--<button class="user-button" (click)="logout()" mat-button>LogOut</button>-->
+
+
+<!--<p>Provided Email Address: {{email}}</p>-->
+<!--<h3>Saved Presets</h3>-->
+<!--<ul>-->
+<!--<li>Room:{{userData[0].room}}</li>-->
+<!--<li>Zone:{{userData[0].zone}}</li>-->
+<!--<li>AirFlow:{{userData[0].airflow}}</li>-->
+<!--</ul>-->
+
+<!--</div>-->

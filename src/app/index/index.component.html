@@ -1,0 +1,35 @@
+<fa-icon [icon]="question" class="guide" (click)="tourStart()"></fa-icon>
+<header>
+  <h1 style="padding: 0; margin: 0">Welcome</h1>
+  <h2>{{ username }}</h2>
+  <p style="margin: 0; padding: 0; font-size: 12pt">Vent2U your solution <br> for best possible indoor climate!</p>
+</header>
+<section class="indexContainer">
+  <mat-card routerLink="cp" class="first-element button">
+    <fa-icon [icon]="chair" class="icon"></fa-icon>
+    <mat-card-title>Check In</mat-card-title>
+  </mat-card>
+  <mat-card routerLink="cp/fanSetting" class="second-element button">
+    <fa-icon [icon]="fan" class="icon"></fa-icon>
+    <mat-card-title>Temperature</mat-card-title>
+  </mat-card>
+  <mat-card routerLink="learningelement" class="third-element button">
+    <fa-icon [icon]="cap" class="icon"></fa-icon>
+    <mat-card-title>Learning</mat-card-title>
+  </mat-card>
+  <mat-card routerLink="login" class="fourth-element button">
+    <fa-icon [icon]="user" class="icon"></fa-icon>
+    <mat-card-title>Profile</mat-card-title>
+  </mat-card>
+  <!--  <mat-card routerLink="**" disabled>-->
+  <!--    <mat-card-title>Schedule</mat-card-title>-->
+  <!--    <fa-icon [icon]="calender" class="watermarkIcon"></fa-icon>-->
+  <!--    <fa-icon [icon]="arrow" class="arrow"></fa-icon>-->
+  <!--  </mat-card>-->
+  <!--  <mat-card routerLink="**" disabled>-->
+  <!--    <mat-card-title>Contact</mat-card-title>-->
+  <!--    <fa-icon [icon]="contact" class="watermarkIcon"></fa-icon>-->
+  <!--    <fa-icon [icon]="arrow" class="arrow"></fa-icon>-->
+  <!--  </mat-card>-->
+</section>
+

@@ -1,0 +1,11 @@
+.dropDowns{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.popUpBtn{
+  float: right;
+}
+zxing-scanner{
+  border: 2px solid;
+  margin-bottom: 5px;
+}

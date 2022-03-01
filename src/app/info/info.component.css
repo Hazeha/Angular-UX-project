@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    color: white;
+}
+p{
+    color: white;
+}
+fa-icon{
+    font-size: 10rem;
+    margin: 10px;
+    margin-left: 150px;
+    color: #2D2D4F;
+}
+.airflow{
+    width: fit-content;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+button{
+    color: white;
+  display: flex;
+  justify-content: center;
+  border: solid white 1px;
+  padding: .3rem 1.8rem;
+  margin: auto;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0 ,0, 0.2);
+  box-shadow: 0px 0px 10px rgba(66,66,66,.45);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    margin-top: 20px
+}
+@media only screen and (max-width: 600px) {
+    fa-icon {
+     margin-left: 100px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .airflow, img{
+     width: 100%;
+    }
+
+  }
+  .checking{
+      width: 100%;
+  }
+  .fan-setting{
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(86, 88, 150, 0.51);
+        color:white
+  }

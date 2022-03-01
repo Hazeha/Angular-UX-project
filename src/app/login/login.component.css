@@ -1,0 +1,60 @@
+/*:host {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin: 100px 0px;*/
+/*}*/
+
+form{
+    width: 80%;
+    margin: auto;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+mat-card-title,
+mat-card-content {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: red;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mat-alert-danger {
+    color: #f44336;
+    /* Red */
+}
+.dangerMan{
+  color: lightcoral;
+  font-size: 12pt;
+  padding-left: 17px;
+  margin-bottom: 25px;
+}
+::ng-deep .mat-form-field .mat-form-field-label{
+    color: white;
+}
+
+/* Change label color on focused */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: white !important;
+}
+
+/* underline border color on focused */
+::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+    background-color: white !important;
+}
+
+::ng-deep .mat-form-field-underline{
+    background-color: white !important;
+}

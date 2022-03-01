@@ -1,0 +1,29 @@
+<fa-icon [icon]="question" class="guide" (click)="tourStart()"></fa-icon>
+
+<header>
+  <h1>Check In</h1>
+  <p class="currentSetting">
+    Current Zone:
+    {{position.currentZone || '---'}}</p>
+</header>
+
+<mat-card (click)="qrScanner()" class="first-element button">
+  <fa-icon [icon]="qrCode" class="icon"></fa-icon>
+  <mat-card-title>QR scanner</mat-card-title>
+</mat-card>
+
+<div class="divider">
+  <hr>
+  <span>OR</span>
+  <hr>
+</div>
+<mat-card (click)="zoneSelect()" class="second-element button">
+  <fa-icon [icon]="search" class="icon"></fa-icon>
+  <mat-card-title>Choose Room</mat-card-title>
+</mat-card>
+<hr>
+<!--<section class="zoneContainer" class="second-element">-->
+<!--  <app-zone-select [(position)]="currentPosition">-->
+<!--&lt;!&ndash;    Component for zone selection &ndash;&gt;-->
+<!--  </app-zone-select>-->
+<!--</section>-->

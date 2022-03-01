@@ -1,0 +1,15 @@
+.fan-button{
+    font-size: 18px;
+    font-weight: 500;
+    min-width: 160px;
+    color:rgba(0,0,0,.87);
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    width: 320px;
+    margin: auto;
+}

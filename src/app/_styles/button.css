@@ -1,0 +1,51 @@
+.buttonGeneral {
+  color: white;
+  display: flex;
+  justify-content: center;
+  border: solid white 1px;
+  padding: .3rem 1.8rem;
+  margin: auto;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0 ,0, 0.2);
+  box-shadow: 0px 0px 10px rgba(66,66,66,.45);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+
+.buttonGeneral:hover {
+  background-color: rgba(0, 0 ,0, 0.1);
+  cursor: pointer;
+}
+label {
+  color: white;
+  font-size: 17pt;
+  padding-left: 17px;
+}
+input{
+  padding: 5px 10px;
+  font-size: 28px;
+  background-color: rgba(0, 0 ,0, 0.2);
+  color: #FFFFFF;
+  /*border-top: unset;*/
+  /*border-left: unset;*/
+  /*border-right: unset;*/
+  border: unset;
+  border-bottom: 2px solid rgba(255,255,255, 0.5);
+
+  box-shadow: 0px 0px 10px rgba(66,66,66,.45);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+  width: 100%;
+  /*text-align: center;*/
+}
+input:focus {
+  border-bottom: 3px solid rgba(255,255,255, 1);
+}
+.inOut{
+  color: white;
+  font-size: 13pt;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 1rem;
+  cursor: pointer;
+}

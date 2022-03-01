@@ -1,0 +1,56 @@
+<h2>Select Position</h2>
+<mat-form-field class="dropDowns" appearance="no-line">
+      <mat-label mat-raised >Select Room</mat-label>
+      <mat-select class="selectValue" matNativeControl>
+        <mat-option
+          *ngFor="let room of rooms; index as i;"
+          value="{{room.id}}"
+          (onSelectionChange)="setRoom(room.id)"
+        >
+          {{room.id}} - {{room.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+<!--<p class="">Room: {{this.currentRoom || '-&#45;&#45;'}} | Zone: {{this.currentZone || '-&#45;&#45;'}}</p>-->
+
+
+<!--    <mat-form-field appearance="no-line" class="dropDowns">-->
+
+<!--      <mat-label>{{ currentRoom == null ? "-&#45;&#45;" : "Select Zone" }}</mat-label>-->
+<!--      <mat-select matNativeControl [(value)]="currentZoneId">-->
+<!--        <mat-option-->
+<!--          *ngFor="let zone of zones index as i;"-->
+<!--          (onSelectionChange)="setZone(zone.id, i)"-->
+<!--          value="{{i}}"-->
+<!--        >-->
+<!--          <mat-icon>view_module</mat-icon>-->
+<!--          {{ i + 1 }}-->
+<!--        </mat-option>-->
+<!--      </mat-select>-->
+<!--    </mat-form-field>-->
+    <mat-divider></mat-divider>
+    <div class="selectZone">
+      <div class="zone"
+           *ngFor="let zone of zones index as i;"
+           (click)="setZone(zone.id, i)"
+           [ngStyle]="{'border':zone.id === currentZone ? '2px solid green' : '1px solid rgba(0, 0 ,0, 0.2)'}"
+      >
+        <div class="zoneInfo">
+          <p style="float: right; font-size: 8pt">{{zone.airflow / 3}}* | {{zone.airflow || 0}}%</p>
+          <h3 style="font-size: 22pt; margin: 0;">{{ zone.id }}</h3>
+        </div>
+
+          <div *ngFor="let seat of seats;">
+            <mat-icon *ngIf="seat.zone_id === zone.id" style="margin: auto"
+                      [ngStyle]="{'color':seat.occupied === false ? 'red' : 'green'}"
+            >
+              chair
+            </mat-icon>
+          </div>
+
+
+
+      </div>
+    </div>
+<button mat-button class="buttonGeneral" (click)="onNoClick()">Check In</button>
+

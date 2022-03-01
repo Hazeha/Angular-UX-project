@@ -1,0 +1,35 @@
+<div class="sections">
+    <mat-card class="ventk2-project" *ngIf="currentSection== 0">
+        <h1>Check In</h1>
+        <img class="checkin" src="../../assets/barcode.gif">
+        <p>You can use your phones QR Scanner to automatically fill in Room and Zone or you can choose to set manually.
+        </p>
+        <hr>
+        <button mat-button id="next-button" (click)="changeSection(1)">Next</button>
+    </mat-card>
+
+    <mat-card class="fan-setting" *ngIf="currentSection== 1">
+        <h1>Fan Setting</h1>
+        <img src="../../assets/humantemp.gif">
+        <p>At this section, choose different ventilation parameters like cold, warm or normal </p>
+        <p>Control panel will take care of your climate zone vantilation units based you selection</p>
+        <hr>
+        <button mat-button id="next-button" (click)="changeSection(1)">Next</button>
+    </mat-card>
+
+    <mat-card class="ventk2-project" *ngIf="currentSection== 2">
+        <h1>View Profile</h1><br>
+        <p>You can use the system as a guest or as a register user</p>
+        <p>You can see and update your profile if you are logged in</p>
+        <hr>
+        <button mat-button id="next-button" (click)="changeSection(1)">Next</button>
+    </mat-card>
+
+    <mat-card class="ventk2-project" *ngIf="currentSection== 3">
+        <h1>Lets Go!</h1><br>
+        <hr>
+        <button mat-button id="next-button" (click)="goToquiz()">Next</button>
+    </mat-card>
+
+
+</div>
